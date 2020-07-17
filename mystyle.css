@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: opacity 1s linear;
+}
+
+body {
+    font-family: monospace;
+    background-color: #afcde6;
+}
+
+header {
+    color: #ffffff;
+    background-color: #565e5e;
+    font-family: Arial;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+
+main {
+    background-color: #fffef6;
+    height: 100vh;
+    width: 60vw;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.quiz-start {
+    text-align: center;
+    padding-top: 65px;
+}
+
+.quiz-start * {
+    margin: 50px 0;
+}
+
+button {
+    background-color: #565e5e;
+    color: white;
+    font-family: Verdana;
+    font-size: 20px;
+    border: 3px solid #565e5e;
+    letter-spacing: 3px;
+    padding: 4px 28px;
+}
+
+button:hover {
+    color: #565e5e;
+    background-color: white;
+    cursor: pointer;
+}
+
+.question-box {
+    overflow: hidden;
+    background-color: #f7f7f7;
+    font-size: 15px;
+    width: 60%;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#question-header, #question-text {
+    margin-bottom: 30px;
+}
+
+.answer-input {
+    padding-bottom: 35px;
+}
+
+.answer-input div {
+    position: relative;
+    padding: 15px 20px;
+}
+
+.answer-input label {
+    position: absolute;
+    top: 0%;
+    padding-left: 10px;
+    margin-top: 15px;
+    width: 100%;
+    height: 80%;
+}
+
+.answer-input input {
+    height: 18px;
+    width: 18px;
+}
+
+.input-dark {
+    background-color: #e6e6e6;
+}
+
+.input-light {
+    background-color: #f1f1f1;
+}
+
+#finish-btn {
+    display: none;
+}
+
+.results-box {
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    width: 444px;
+    margin: 0 auto;
+}
+
+.results-box h2, .results-box p{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.results-box p {
+    margin-bottom: 80px;
+}
+
+.caption {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caption span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.answer-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.answer-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 17px;
+}
+
+.right-answer {
+    background-color: #95ffb0;
+    border-color: #42724e;
+}
+
+.wrong-answer {
+    background-color: #f07e7e;
+    border-color: #6e3434;
+}
+
+.null-answer {
+    background-color: #dfdfdf;
+    border-color: #696969;
+}
+
+.hide {
+    opacity: 0;
+    height: 0;
+}

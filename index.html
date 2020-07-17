@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Best Quiz Ever</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>World's Best Quiz</h1>
+        </header>
+
+        <div id="quiz-start" class="quiz-start">
+            <p>Click the button to start the quiz.</p>
+            <button id="start-btn" class="start-btn">LET'S GO</button>
+        </div>
+
+        <div id="question-box" class="question-box hide">
+            <h2 id="question-header"></h2>
+            <p id="question-text"></p>
+
+            <div class="answer-input">
+                <div class="input-dark">
+                    <input id="alt-a" type="radio" name="alternative" value="a">
+                    <label id="label-a" for="alt-a"></label>
+                </div>
+                
+                <div class="input-light">
+                    <input id="alt-b" type="radio" name="alternative" value="b">
+                    <label id="label-b" for="alt-b"></label>
+                </div>
+
+                <div class="input-dark">
+                    <input id="alt-c" type="radio" name="alternative" value="c">
+                    <label id="label-c" for="alt-c"></label>
+                </div>
+
+                <div class="input-light">
+                    <input id="alt-d" type="radio" name="alternative" value="d">
+                    <label id="label-d" for="alt-d"></label>
+                </div>
+            </div>
+
+            <button id="next-btn">NEXT</button>
+        </div>
+
+        <div id="results-box" class="results-box hide">
+            <h2>Congratulations!</h2>
+            <p id="question-result"></p>
+            <div class="caption">
+                <span class="right-answer"></span>: Correct
+                <span class="wrong-answer"></span>: Wrong
+                <span class="null-answer"></span>: Unanswered
+            </div>
+            <ul id="answer-list" class="answer-list"></ul>
+        </div>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
